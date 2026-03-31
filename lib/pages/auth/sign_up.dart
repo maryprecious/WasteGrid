@@ -59,7 +59,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
           Icons.arrow_back_ios_new_rounded,
           color: AppColors.mainColor,
         ),
-        ),
         elevation: 0,
       ),
       body: SafeArea(
@@ -79,6 +78,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   ),
                 ),
                 SizedBox(height: 5),
+                // padding: const EdgeInsets.symmetric(horizontal: 48),
                 Text('Enter your details to get started',
                     style: TextStyle(
                         color: Colors.black87, fontWeight: FontWeight.w500),

@@ -11,7 +11,6 @@
 .svn/
 .swiftpm/
 migrate_working_dir/
-node_modules/
 
 # IntelliJ related
 *.iml
@@ -19,10 +18,8 @@ node_modules/
 *.iws
 .idea/
 
-# The .vscode folder contains launch configuration and tasks you configure in
 # VS Code which you may wish to be included in version control, so this line
 # is commented out by default.
-.vscode/
 
 # Flutter/Dart/Pub related
 **/doc/api/
@@ -45,8 +42,17 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
+# Node modules
+node_modules/
+
+# VS Code
+
 # Firebase Configuration (Sensitive)
 lib/firebase_options.dart
 android/app/google-services.json
 web/firebase_config.js
 ios/Runner/GoogleService-Info.plist
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore

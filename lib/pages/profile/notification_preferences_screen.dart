@@ -125,7 +125,6 @@ class NotificationPreferencesScreen extends StatelessWidget {
               Get.offAllNamed('/catalog');
               break;
             case 4:
-              // Already on profile
               break;
           }
         },

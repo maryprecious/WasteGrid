@@ -5,7 +5,7 @@ import '../../utils/app_colors.dart';
 class ProfileScreen extends StatelessWidget {
   final String userName = "David";
   final String userImageUrl =
-      "https://randomuser.me/api/portraits/men/75.jpg"; 
+      "https://randomuser.me/api/portraits/men/75.jpg";
 
   const ProfileScreen({super.key});
 

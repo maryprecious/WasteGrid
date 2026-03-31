@@ -246,7 +246,6 @@ class ScanScreen extends StatelessWidget {
       controller: controller.mobileScannerController,
       onDetect: controller.onBarcodeDetected,
       fit: BoxFit.contain,
-      fit: BoxFit.contain,
     );
   }
 

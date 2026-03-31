@@ -8,9 +8,19 @@ Waste Grid is a Flutter mobile app prototype intended to gamify recycling and wa
 - Home dashboard with resource cards and quick actions
 - Community feed and challenges
 - Scan-based waste submission (camera + barcode)
-- Reward points and leaderboard system
-- Wallet/redeem flows (Airtime, Data, Supermarket, Kiosk)
+- Rewards system and leaderboard
 - Profile settings with location/notifications/security
+
+## Firebase Integration
+
+The project now includes Firebase to enhance its scalability and provide robust backend services. Key integrations include:
+
+*   **Authentication**: Secure user sign-in and management.
+*   **Real-time Database/Firestore**: For live updates to the community feed and leaderboard.
+*   **Analytics**: To track user engagement and app performance.
+*   **Cloud Messaging**: For pushing notifications and reminders to users.
+
+This integration ensures the app can handle a growing user base while maintaining a responsive and dynamic experience.
 
 ## Dependency Setup
 
@@ -71,12 +81,6 @@ Waste Grid is a Flutter mobile app prototype intended to gamify recycling and wa
   flutter test
   ```
 
-## Notes
-
-- No AI-powered code generation hints are included in the app logic.
-- Follow the PR/issue workflow configured for your team.
-- Update networking and backend API endpoints before production.
-
 ## Troubleshooting
 
 - If you see Dart version mismatch, set SDK to compatible version in `pubspec.yaml`:
@@ -89,7 +93,3 @@ Waste Grid is a Flutter mobile app prototype intended to gamify recycling and wa
   flutter pub run build_runner clean
   flutter pub run build_runner build --delete-conflicting-outputs
   ```
-
----
-
-This README is “non-AI” and manually written for project maintainability and onboarding.
