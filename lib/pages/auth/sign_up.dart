@@ -29,25 +29,21 @@ class _SignUpScreenState extends State<SignUpScreen> {
       // Perform sign up logic here
       Get.snackbar('Sign Up', 'Sign up successful',
           snackPosition: SnackPosition.BOTTOM);
-         // Navigate to home screen after successful login
           Get.offAllNamed('/home');
     }
   }
 
   void _onGoogleSignUp() {
-    // Implement Google sign up logic
     Get.snackbar('Google Sign Up', 'Google sign up pressed',
         snackPosition: SnackPosition.BOTTOM);
   }
 
   void _onFacebookSignUp() {
-    // Implement Facebook sign up logic
     Get.snackbar('Facebook Sign Up', 'Facebook sign up pressed',
         snackPosition: SnackPosition.BOTTOM);
   }
 
   void _onAppleSignUp() {
-    // Implement Apple sign up logic
     Get.snackbar('Apple Sign Up', 'Apple sign up pressed',
         snackPosition: SnackPosition.BOTTOM);
   }
@@ -254,7 +250,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     const Text('Already have an account?'),
                     TextButton(
                       onPressed: () {
-                        // Navigate to login screen
                         Get.toNamed('/login');
                       },
                       child: Text(

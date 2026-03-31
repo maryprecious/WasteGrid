@@ -16,8 +16,6 @@ class ChatController extends GetxController {
 
     messages.add(ChatMessage(text: text, isUser: true));
     isTyping.value = true;
-
-    // Simulate AI response delay
     Future.delayed(Duration(seconds: 2), () {
       final response = generateAIResponse(text);
       messages.add(ChatMessage(text: response, isUser: false));

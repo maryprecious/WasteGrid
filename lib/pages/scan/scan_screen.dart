@@ -59,7 +59,6 @@ class ScanScreen extends StatelessWidget {
               Get.toNamed('/recycle');
               break;
             case 2:
-              // Already on scan
               break;
             case 3:
               Get.toNamed('/catalog');
@@ -214,7 +213,6 @@ class ScanScreen extends StatelessWidget {
               SizedBox(width: 20.w),
               ElevatedButton.icon(
                 onPressed: () {
-                  // Placeholder for camera snap functionality
                   Get.snackbar('Info', 'Camera snap not implemented yet');
                 },
                 icon: Icon(Icons.camera_alt),
@@ -248,8 +246,7 @@ class ScanScreen extends StatelessWidget {
       controller: controller.mobileScannerController,
       onDetect: controller.onBarcodeDetected,
       fit: BoxFit.contain,
-      // allowDuplicates: false,
-      // Removed overlay parameter to be compatible with mobile_scanner version 2.1.0
+      fit: BoxFit.contain,
     );
   }
 
@@ -335,7 +332,6 @@ class ScanScreen extends StatelessWidget {
           SizedBox(height: 20.h),
           ElevatedButton(
             onPressed: () {
-              // Navigate to map screen
               Get.to(() => MapScreen());
             },
             style: ElevatedButton.styleFrom(
@@ -355,7 +351,6 @@ class ScanScreen extends StatelessWidget {
           SizedBox(height: 12.h),
           OutlinedButton(
             onPressed: () {
-              // Navigate to catalog screen as "Learn how to recycle"
               Get.toNamed('/catalog');
             },
             style: OutlinedButton.styleFrom(

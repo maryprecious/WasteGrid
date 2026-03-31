@@ -23,7 +23,6 @@ class _SplashScreenState extends State<SplashScreen> {
     'assets/svgs/svg2.svg',
     'assets/svgs/svg3.svg',
     'assets/svgs/svg4.svg',
-    // Add more SVG asset paths as needed
   ];
 
   int _currentSvgIndex = -1;
@@ -61,8 +60,6 @@ class _SplashScreenState extends State<SplashScreen> {
           Get.offAll(() =>  OnboardingScreen());
         });
       } else {
-        // Check if user is logged in or needs to go to login
-        // For now, navigate to LoginScreen
         Future.delayed(Duration(seconds: svgAssets.length * 2 - 1), () {
           Get.offAll(() =>  LoginScreen());
         });

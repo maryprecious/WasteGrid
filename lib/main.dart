@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:get/get.dart';
 
-// Importing pages
 import 'pages/splash/splash_screen.dart';
 import 'pages/onboarding/onboarding.dart';
 import 'pages/home/home_screen.dart';
@@ -15,7 +15,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'pages/catalog/catalog_screen.dart';
 import 'pages/catalog/product_details.dart';
 import 'pages/scan/scan_screen.dart';
-//  profile and earning screens import
 import 'pages/profile/profile_screen.dart';
 import 'pages/earning/earning_screen.dart';
 import 'pages/recycle/recycle_screen.dart';
@@ -29,9 +28,14 @@ import 'pages/profile/help_center_screen.dart';
 import 'pages/profile/referral_screen_temp.dart';
 import 'pages/learn_and_earn/learn_and_earn_screen.dart';
 
+import 'firebase_options.dart';
+
 void main() async {
-  await Hive.initFlutter();
   WidgetsFlutterBinding.ensureInitialized();
+  await Hive.initFlutter();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 
@@ -41,7 +45,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      // designSize: Size(375, 812), // Set your design size here
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (context, child) => GetMaterialApp(

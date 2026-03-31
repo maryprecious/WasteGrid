@@ -27,25 +27,21 @@ class _LoginScreenState extends State<LoginScreen> {
           colorText: Colors.white,
           backgroundColor: Colors.green,
           );
-          // Navigate to home screen after successful login
          Get.offAllNamed('/home');
     }
   }
 
   void _onGoogleLogin() {
-    // Implement Google login logic
     Get.snackbar('Google Login', 'Google login pressed',
         snackPosition: SnackPosition.BOTTOM);
   }
 
   void _onFacebookLogin() {
-    // Implement Facebook login logic
     Get.snackbar('Facebook Login', 'Facebook login pressed',
         snackPosition: SnackPosition.BOTTOM);
   }
 
   void _onAppleLogin() {
-    // Implement Apple login logic
     Get.snackbar('Apple Login', 'Apple login pressed',
         snackPosition: SnackPosition.BOTTOM);
   }
@@ -153,7 +149,6 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                     TextButton(
                       onPressed: () {
-                        // Navigate to forget password screen
                         Get.toNamed('/forget_password');
                       },
                       child: Text(
@@ -248,7 +243,6 @@ class _LoginScreenState extends State<LoginScreen> {
                     const Text('Don\'t have an account?'),
                     TextButton(
                       onPressed: () {
-                        // Navigate to sign up screen
                         Get.toNamed('/sign_up');
                       },
                       child: Text(

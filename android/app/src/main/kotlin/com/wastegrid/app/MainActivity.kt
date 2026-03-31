@@ -1,4 +1,4 @@
-package com.example.waste_grid
+package com.wastegrid.app
 
 import io.flutter.embedding.android.FlutterActivity
 

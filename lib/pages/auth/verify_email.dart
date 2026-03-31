@@ -23,15 +23,11 @@ class _VerifyEmailScreenState extends State<VerifyEmailScreen> {
   }
 
   void _onConfirm() {
-    // Handle confirm action here
     final pin = _pinController.text;
-    // For now, just print the pin
     print('Entered PIN: \$pin');
   }
 
   void _onChangeEmail() {
-    // Handle change email action here
-    // For example, navigate back or to email input screen
     Navigator.of(context).pop();
   }
 

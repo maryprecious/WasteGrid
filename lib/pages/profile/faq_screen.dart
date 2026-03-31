@@ -15,7 +15,6 @@ class _FaqScreenState extends State<FaqScreen> {
   final TextEditingController _searchController = TextEditingController();
 
   void _onDonePressed() {
-    // TODO: Implement any save or search logic if needed
     Navigator.of(context).pop();
   }
 
@@ -62,7 +61,6 @@ class _FaqScreenState extends State<FaqScreen> {
             SizedBox(height: 16.h),
             _buildFaqItem("Learn and Earn", () {
               Get.to(() => const LearnAndEarnScreen());
-              // TODO: Implement navigation or action
             }),
             const Spacer(),
             SizedBox(

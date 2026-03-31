@@ -24,12 +24,10 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
   void _sendResetLink() {
     if (_formKey.currentState?.validate() ?? false) {
       final email = _emailController.text;
-      // TODO: Implement sending reset link logic
       print('Send reset link to: \$email');
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text('Reset link sent to \$email')),
       );
-      // Navigate to VerifyEmailScreen with the entered email
       Navigator.of(context).push(
         MaterialPageRoute(
           builder: (context) => VerifyEmailScreen(email: email),

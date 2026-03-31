@@ -25,7 +25,6 @@ class OnboardingController extends GetxController {
         curve: Curves.easeInOut,
       );
     } else {
-      // TODO: Navigate to next screen, e.g., login or home
       print('Onboarding completed');
       Get.offAll(()=> LoginScreen());
     }

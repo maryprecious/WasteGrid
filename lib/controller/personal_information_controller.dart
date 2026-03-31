@@ -18,8 +18,6 @@ class PersonalInformationController extends GetxController {
   }
 
   void savePersonalInformation() {
-    // Implement save logic here, e.g., API call or local storage
-    // For now, just print to console
     print('Saved Personal Information:');
     print('Full Name: \$fullName');
     print('Email: \$email');

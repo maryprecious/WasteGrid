@@ -39,11 +39,9 @@ class PasswordAndSecurityController extends GetxController {
 
   void saveSettings() {
     if (!validatePasswords()) {
-      // Handle validation failure, e.g., show error message
       print('Password validation failed');
       return;
     }
-    // Save logic here, e.g., API call or local storage
     print('Password & Security settings saved');
     print('New Password: \$newPassword');
     print('Allow Fingerprint: \$allowFingerprint');

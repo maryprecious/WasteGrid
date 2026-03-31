@@ -28,7 +28,6 @@ class NotificationPreferencesController extends GetxController {
   }
 
   void savePreferences() {
-    // Implement save logic here, e.g., API call or local storage
     print('Notification Preferences saved:');
     print('Push Notification: \$pushNotification');
     print('Reminder: \$reminder');
