@@ -21,7 +21,6 @@ class _LoginScreenState extends State<LoginScreen> {
 
   void _onLoginPressed() {
     if (_formKey.currentState?.validate() ?? false) {
-      // Perform login logic here
       Get.snackbar('Login', 'Login successful',
           snackPosition: SnackPosition.TOP,
           colorText: Colors.white,
@@ -49,7 +48,6 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // backgroundColor: AppColors.background,
       appBar: AppBar(
         leading: InkWell(
           onTap: () {
@@ -60,7 +58,6 @@ class _LoginScreenState extends State<LoginScreen> {
             color: AppColors.mainColor,
           )
         ),
-        // backgroundColor: AppColors.primary,
         elevation: 0,
       ),
       body: SafeArea(
@@ -82,7 +79,6 @@ class _LoginScreenState extends State<LoginScreen> {
 
                       SizedBox(height: 5),
                       
-                        // padding: const EdgeInsets.symmetric(horizontal: 48),
                          Text('Enter your login details, and start making environmental impact',
                             style: TextStyle(
                                 color: Colors.black87,

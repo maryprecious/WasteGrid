@@ -126,7 +126,7 @@ class PersonalInformationScreen extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        currentIndex: 4, // Profile tab index
+        currentIndex: 4, 
         onTap: (index) {
           switch (index) {
             case 0:
@@ -142,7 +142,6 @@ class PersonalInformationScreen extends StatelessWidget {
               Get.offAllNamed('/catalog');
               break;
             case 4:
-              // Already on profile
               break;
           }
         },

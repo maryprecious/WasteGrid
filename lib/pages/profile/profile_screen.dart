@@ -5,7 +5,7 @@ import '../../utils/app_colors.dart';
 class ProfileScreen extends StatelessWidget {
   final String userName = "David";
   final String userImageUrl =
-      "https://randomuser.me/api/portraits/men/75.jpg"; // my image URl
+      "https://randomuser.me/api/portraits/men/75.jpg"; 
 
   const ProfileScreen({super.key});
 
@@ -144,7 +144,7 @@ class ProfileScreen extends StatelessWidget {
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
-        currentIndex: 4, // Profile tab index
+        currentIndex: 4, 
         onTap: (index) {
           switch (index) {
             case 0:
@@ -160,7 +160,6 @@ class ProfileScreen extends StatelessWidget {
               Get.offAllNamed('/catalog');
               break;
             case 4:
-              // Already on profile
               break;
           }
         },

@@ -324,7 +324,6 @@ class HomeScreen extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    // Header with gradient, user info, menu and notification icons
                     Container(
                       width: double.infinity,
                       padding: EdgeInsets.symmetric(
@@ -419,7 +418,6 @@ class HomeScreen extends StatelessWidget {
                             ],
                           ),
                           SizedBox(height: 20.h),
-                          // Scan and Earn buttons
                           Container(
                             height: 100.h,
                             decoration: BoxDecoration(
@@ -511,7 +509,6 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ),
                     SizedBox(height: 15.h),
-                    // Menu popup overlay
                     if (controller.isMenuOpen.value == 12)
                       Positioned(
                         top: 100.h,
@@ -642,7 +639,6 @@ class HomeScreen extends StatelessWidget {
                         ),
                       ),
                     SizedBox(height: 15.h),
-                    // Tab bar for Learn and Categories
                     Container(
                       margin: EdgeInsets.symmetric(horizontal: 10.w),
                       padding: EdgeInsets.all(5.h),
@@ -725,7 +721,6 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ),
                     SizedBox(height: 15.h),
-                    // Challenges cards
                     Visibility(
                       visible: controller.selectedTabIndex.value == 0,
                       child: Container(
@@ -767,23 +762,10 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ),
                     SizedBox(height: 20.h),
-                    // Community section
                     Visibility(
                       visible: controller.selectedTabIndex.value == 0,
                       child: Container(
-                        // margin: EdgeInsets.symmetric(horizontal: 20.w),
                         padding: EdgeInsets.all(15.h),
-                        // decoration: BoxDecoration(
-                        //   color: Colors.white,
-                        //   borderRadius: BorderRadius.circular(20.r),
-                        //   boxShadow: [
-                        //     BoxShadow(
-                        //       color: Colors.black12,
-                        //       blurRadius: 10.r,
-                        //       offset: Offset(0, 5.h),
-                        //     ),
-                        //   ],
-                        // ),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -814,12 +796,11 @@ class HomeScreen extends StatelessWidget {
                               height: 400,
                               child: GridView.builder(
                                 physics:
-                                    NeverScrollableScrollPhysics(), // disable scrolling
+                                    NeverScrollableScrollPhysics(),
                                 gridDelegate:
                                     SliverGridDelegateWithFixedCrossAxisCount(
-                                      crossAxisCount: 2, // 2 items in a row
-                                      childAspectRatio:
-                                          1.1, // Adjust the aspect ratio as needed
+                                      crossAxisCount: 2,
+                                          1.1,
                                     ),
                                 itemCount: controller.communityImages.length,
                                 itemBuilder: (BuildContext context, int index) {

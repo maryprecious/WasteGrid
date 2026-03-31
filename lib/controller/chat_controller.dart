@@ -24,7 +24,6 @@ class ChatController extends GetxController {
   }
 
   String generateAIResponse(String userInput) {
-    // Simple logic based on keywords
     final input = userInput.toLowerCase();
     if (input.contains('dispose') || input.contains('recycle')) {
       return 'You can recycle plastic bottles at our nearest recycle centers. Check the catalog for more info.';

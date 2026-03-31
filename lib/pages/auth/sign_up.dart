@@ -26,7 +26,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
 
   void _onSignUpPressed() {
     if (_formKey.currentState?.validate() ?? false) {
-      // Perform sign up logic here
       Get.snackbar('Sign Up', 'Sign up successful',
           snackPosition: SnackPosition.BOTTOM);
           Get.offAllNamed('/home');
@@ -51,7 +50,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // backgroundColor: AppColors.background,
       appBar: AppBar(
         leading: InkWell(
           onTap: () {
@@ -62,7 +60,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
           color: AppColors.mainColor,
         ),
         ),
-        // backgroundColor: AppColors.primary,
         elevation: 0,
       ),
       body: SafeArea(
@@ -82,7 +79,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   ),
                 ),
                 SizedBox(height: 5),
-                // padding: const EdgeInsets.symmetric(horizontal: 48),
                 Text('Enter your details to get started',
                     style: TextStyle(
                         color: Colors.black87, fontWeight: FontWeight.w500),

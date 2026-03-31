@@ -25,7 +25,7 @@ import 'pages/profile/notification_preferences_screen.dart';
 import 'pages/profile/location_screen.dart';
 import 'pages/profile/faq_screen.dart';
 import 'pages/profile/help_center_screen.dart';
-import 'pages/profile/referral_screen_temp.dart';
+import 'pages/profile/referral_screen.dart';
 import 'pages/learn_and_earn/learn_and_earn_screen.dart';
 
 import 'firebase_options.dart';

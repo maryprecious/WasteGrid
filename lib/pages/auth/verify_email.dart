@@ -84,7 +84,6 @@ class _VerifyEmailScreenState extends State<VerifyEmailScreen> {
                 defaultPinTheme: defaultPinTheme,
                 showCursor: true,
                 onCompleted: (pin) {
-                  // Optionally handle completion
                 },
               ),
             ),

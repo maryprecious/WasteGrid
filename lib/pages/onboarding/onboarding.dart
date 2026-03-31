@@ -42,7 +42,6 @@ class OnboardingScreen extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            // Skip button aligned to top right
             Padding(
               padding: EdgeInsets.only(right: 24.w, top: 16.h),
               child: Align(
@@ -78,7 +77,7 @@ class OnboardingScreen extends StatelessWidget {
                           child: Image.asset(
                             item["image"]!,
                             fit: BoxFit.cover,
-                            width: 400.w //MediaQuery.of(context).size.width
+                            width: 400.w
                           ),
                         ),
               Gap(15),
